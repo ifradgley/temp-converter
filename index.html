@@ -1,34 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temp-converter</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>temp-converter</title>
+    <!-- Link your external CSS file here: -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- Link your external CSS file here: -->
-  <!-- <link rel="stylesheet" href="style.css"> -->
-</head>
-
-<body>
-
-  <!-- All visible webpage content goes here -->
-  <h1>Temperature Converter</h1>
-  <div>
-    <h2>Celcius: "C" Fahrenheit: "F"</h2>
-    <h3>Temperature </h3>
-    <input id="input-celsius" type="number" placeholder="Type in a number">
-    <button id="btn-celsius">Celsius</button>
-    <p id="result-celsius"> Result: </p>
-    <input id="input-fahrenheit" type="number" placeholder="Type in a number">
-    <button id="btn-fahrenheit">Fahrenheit</button>
-    <p id="result-fahrenheit"> Result: </p>
-  </div>
-
-  <!-- Link your external JavaScript file here: -->
-  <script src="script.js"></script>
-
-  
-</body>
-
+  <body>
+    <div class="container">
+      <!-- All visible webpage content goes here -->
+      <h1>Temperature Converter</h1>
+      <div class="selection">
+        <label for="degrees">Degrees</label>
+        <input id="degrees" type="number" />
+        <label for="type">Type</label>
+        <select id="type">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+      <div>
+        <button id="btn-convert">Convert</button>
+        <div class="result">
+          <label for="result">Result</label>
+          <p id="result">............</p>
+        </div>
+      </div>
+    </div>
+    <!-- Link your external JavaScript file here: -->
+    <script src="script.js"></script>
+  </body>
 </html>

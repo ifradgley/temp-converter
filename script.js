@@ -1,21 +1,18 @@
-let inputCelsius = document.getElementById("input-celsius");
-let btnCelsius = document.getElementById("btn-celsius");
-let resultCelsius = document.getElementById("result-celsius");
+let inputDegrees = document.getElementById("degrees");
+let dropDown = document.getElementById("type");
+let paragraph = document.getElementById("result");
+let button = document.getElementById("btn-convert");
+let result;
 
-btnCelsius.addEventListener("click", function () {
-  let userInput = inputCelsius.value;
-  let result = convertToCelsius(userInput);
-  resultCelsius.textContent = result;
-});
-
-let inputFahrenheit = document.getElementById("input-fahrenheit");
-let btnFahrenheit = document.getElementById("btn-fahrenheit");
-let resultFahrenheit = document.getElementById("result-fahrenheit");
-
-btnFahrenheit.addEventListener("click", function () {
-  let userInput = inputFahrenheit.value;
-  let result = convertToFahrenheit(userInput);
-  resultFahrenheit.textContent = result;
+button.addEventListener("click", function () {
+  let userInput = inputDegrees.value;
+  let selectedType = dropDown.value;
+  if (selectedType === "celsius") {
+    result = convertToCelsius(userInput);
+  } else {
+    result = convertToFahrenheit(userInput);
+  }
+  paragraph.textContent = result;
 });
 
 const convertToCelsius = function (x) {
