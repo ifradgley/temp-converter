@@ -1,51 +1,89 @@
 /* Page background */
 body {
     background-color: rgb(217, 217, 231);
-    display: inline-block;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-}
-
-/* Main white card */
-h1 {
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif; 
-    font-weight: normal;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 /* Container */
 .container {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     background-color: white;
-    border-radius: 15px
+    border-radius: 20px
+
 }
+
+/* Main white card */
+h1 {
+    align-items: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: normal;
+    margin: 30px
+
+}
+
+
 
 /* Input and dropdown row */
 .selection {
     display: inline-block;
+    padding: 20px;
+    margin: 10px
+    
+
+}
+
+.btn-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 /* Individual inputs and dropdowns */
 input, select {
-    border: ;
-    border-radius: ;
-    padding: ;
+    border-radius: 2x;
+    padding: 10px;
 }
 
 /* Convert button */
 #btn-convert {
     background-color: rgb(82, 97, 180);
     color: white;
-    border-radius: ;
-    padding: ;
-    width: ;
+    border-radius: 2.5px;
+    padding: 10px;
+    width: 120px;
 }
 
 /* Result box */
+.result-all {
+    height: 20px;
+    justify-content: center;
+
+}
+
+
 #result {
-    border: ;
-    border-radius: ;
-    padding: ;
-    min-height: ;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+p {
+    padding: 0px;
+    margin: 0;
+    
 }
