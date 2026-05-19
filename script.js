@@ -8,9 +8,9 @@ button.addEventListener("click", function () {
   let userInput = inputDegrees.value;
   let selectedType = dropDown.value;
   if (selectedType === "celsius") {
-    result = convertToCelsius(userInput);
-  } else {
     result = convertToFahrenheit(userInput);
+  } else {
+    result = convertToCelsius(userInput);
   }
   paragraph.textContent = result;
 });
