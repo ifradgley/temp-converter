@@ -1,8 +1,17 @@
+let unit = document.getElementById("unit");
 let inputDegrees = document.getElementById("degrees");
 let dropDown = document.getElementById("type");
 let paragraph = document.getElementById("result");
 let button = document.getElementById("btn-convert");
 let result;
+
+dropDown.addEventListener("change", (event) => {
+  if (event.target.value === "celsius") {
+    unit.textContent = "°F";
+  } else {
+    unit.textContent = "°C";
+  }
+});
 
 button.addEventListener("click", function () {
   let userInput = inputDegrees.value;
