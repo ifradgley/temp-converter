@@ -22,6 +22,11 @@ button.addEventListener("click", function () {
     result = convertToCelsius(userInput);
   }
   paragraph.textContent = result;
+  if (selectedType === "celsius") {
+    unit.textContent = "°F";
+  } else {
+    unit.textContent = "°C";
+  }
 });
 
 const convertToCelsius = function (x) {

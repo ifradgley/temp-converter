@@ -1,38 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>temp-converter</title>
 
-    <!-- Link your external CSS file here: -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>temp-converter</title>
 
-  <body>
-    <div class="container">
-      <!-- All visible webpage content goes here -->
-      <h1>Temperature Converter</h1>
-      <div class="selection">
-        <label for="degrees">Degrees</label>
-        <input id="degrees" type="number" />
-        <select id="type">
-          <option value="celsius">Celsius</option>
-          <option value="fahrenheit">Fahrenheit</option>
-        </select>
-      </div>
-      <div class="btn-container">
-        <button class="btn" id="btn-convert">Convert</button>
-        <div class="result-all">
-          <label class="result-label" for="result">Result</label>
-        </div>
+  <!-- Link your external CSS file here: -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- All visible webpage content goes here -->
+    <h1>Temperature Converter</h1>
+    <div class="selection">
+      <label for="degrees">Degrees</label>
+      <input id="degrees" type="number" />
+      <select id="type">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+    <div class="btn-container">
+      <button class="btn" id="btn-convert">Convert</button>
+      <div class="result-all">
         <div class="result-box">
+          <label class="result-label" for="result">Result</label>
           <p id="result"></p>
+          <p id="unit"></p>
         </div>
-        <p id="unit"></p>
       </div>
     </div>
     <!-- Link your external JavaScript file here: -->
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

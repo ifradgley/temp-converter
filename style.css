@@ -13,7 +13,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 50px;
     background-color: white;
     border-radius: 20px
 
@@ -68,11 +68,11 @@ input, select {
 .result-all {
     height: 20px;
     justify-content: center;
-
 }
 
 
 #result {
+    
     border: 1px solid;
     border-radius: 10px;
     width: 100px;
@@ -81,6 +81,22 @@ input, select {
     align-items: center;
     justify-content: center
 }
+
+.result-box {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.result-label {
+    margin-right: 10px
+}
+
+#unit {
+    margin-left: 10px
+}
+
 
 p {
     padding: 0px;
