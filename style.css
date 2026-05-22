@@ -55,14 +55,17 @@ input, select {
     padding: 10px;
 }
 
-/* Convert button */
-#btn-convert {
-    background-color: rgb(82, 97, 180);
+
+
+#btn-reset {
+    background-color: rgb(148, 154, 187);
     color: white;
     border-radius: 2.5px;
     padding: 10px;
     width: 120px;
+    
 }
+
 
 /* Result box */
 .result-all {
